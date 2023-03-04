@@ -1,13 +1,14 @@
 body {
   margin: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: #BFACE2;
-  animation: mymove 9s infinite;
-  animation-direction: reverse;
+  /* background-color: #BFACE2; */
+  /* animation: mymove 9s infinite;
+  animation-direction: reverse; */
 
 }
 .avatar {
   width: 200px;
+ object-fit: contain;
 }
 .card {
   padding: 15px;
@@ -16,11 +17,11 @@ body {
   margin: 0 auto;
   justify-content: space-around;
   text-align: center;
-  /* background: #576878; */
+  background: #576878;
   color: black;
   position: relative;
   border-bottom: 15px solid #2b2839;
-  animation: mymove 7s infinite;
+  animation: mymove 7s infinite; 
   animation-direction: alternate;
  
 }
@@ -30,4 +31,51 @@ body {
   50%  {background: #583eac; left: 100px; top: 200px;}
   75%  {background: #354974; left: 0px; top: 200px;}
   100% {background: rgb(114, 56, 141); left: 0px; top: 0px;}
+}
+
+@media screen and (max-width: 750px){
+  .card{
+    width: 300px;
+    height: 100px;
+  }
+  .avatar{
+    width: 90px;
+  }
+  .card-2{
+    width: 200px;
+    font-size: 9px;
+  }
+    @keyframes mymove {
+      0% {
+        background: #BFACE2;
+        left: 0px;
+        top: 0px;
+      }
+  
+      25% {
+        background: #655DBB;
+        left: 0px;
+        top: 0px;
+      }
+  
+      50% {
+        background: #583eac;
+        left: 0x;
+        top: 100px;
+      }
+  
+      75% {
+        background: #354974;
+        left: 0px;
+        top: 100px;
+      }
+  
+      100% {
+        background: rgb(114, 56, 141);
+        left: 0px;
+        top: 0px;
+      }
+    }
+  
+  
 }
